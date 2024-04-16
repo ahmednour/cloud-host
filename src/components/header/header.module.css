@@ -1,0 +1,35 @@
+.header {
+  @apply relative h-[100px] flex items-center justify-between px-[40px] py-0 border-b-[4px] border-solid border-b-[rgb(144,144,144)] bg-[rgb(227,225,225)];
+}
+.navbar {
+  @apply flex justify-between items-center;
+}
+.logo {
+  @apply flex items-center text-[24px] font-bold text-[rgb(176,15,176)] max-lg:hidden;
+}
+.icon {
+  @apply text-3xl cursor-pointer lg:hidden;
+}
+
+.navLink {
+  @apply text-[20px] font-semibold mx-[12px] my-0;
+}
+.right {
+  @apply flex justify-between items-center gap-[10px];
+}
+.btn {
+  @apply cursor-pointer bg-[#0E1422] rounded-lg text-white  p-[10px] text-[16px] font-semibold flex items-center;
+}
+.btn:hover {
+  @apply bg-[#202533];
+}
+@media (max-width: 1024px) {
+  .navLinksWraper {
+    @apply absolute top-full left-0 w-full bg-[rgb(227,225,225)] z-[100];
+    transition: all 0.5s ease-in;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .navLinks {
+    @apply pl-[30px] pb-[10px] ml-0 flex flex-col items-start justify-center;
+  }
+}
