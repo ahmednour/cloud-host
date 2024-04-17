@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        {children}
+        <main className="container m-auto py-4">{children}</main>
       </body>
     </html>
   );
