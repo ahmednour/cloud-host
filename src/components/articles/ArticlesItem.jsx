@@ -2,7 +2,7 @@ import Link from "next/link"
 
 const ArticlesItem = ({ title, body, id }) => {
     return (
-        <div className="rounded-lg p-2 border-slate-500 border-2 w-full md:w-2/5 lg:w-1/4 relative" >
+        <div className="bg-white hover:bg-gray-50 shadow-lg rounded-lg p-2 border-slate-500 border-2 w-full md:w-2/5 lg:w-1/4 relative" >
             <h2 className="text-2xl text-slate-800 font-bold mb-1 line-clamp-1">
                 {title}
             </h2>
